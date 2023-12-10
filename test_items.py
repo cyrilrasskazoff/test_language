@@ -9,3 +9,4 @@ def test_user_should_see_add_to_basket_button(browser):
     time.sleep(10)
     assert browser.find_element(By.CSS_SELECTOR, "#add_to_basket_form > button"), f"No 'Add to Basket' button found!"
 
+# pytest -s -v --browser_name=firefox --language=fr test_items.py
